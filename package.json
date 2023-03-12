@@ -1,43 +1,25 @@
 {
-  "name": "healthicons",
-  "version": "0.1.0",
-  "private": true,
+  "name": "vue-healthicons",
+  "version": "0.1.3",
+  "description": "Health icons for vue 2 & 3",
+  "main": "dist/library.js",
+  "module": "dist/library.mjs",
+  "type": "module",
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "rollup -c",
+    "test": "test"
   },
-  "dependencies": {
-    "core-js": "^3.8.3",
-    "vue": "^3.2.13"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.12.16",
-    "@babel/eslint-parser": "^7.12.16",
-    "@vue/cli-plugin-babel": "~5.0.0",
-    "@vue/cli-plugin-eslint": "~5.0.0",
-    "@vue/cli-service": "~5.0.0",
-    "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "@babel/eslint-parser"
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead",
-    "not ie 11"
-  ]
+  "keywords": [
+    "healthicons",
+    "vue-healthicons",
+    "vue-icons"
+  ],
+  "author": "Kelvin Chidothi",
+  "license": "ISC",
+  "peerDependencies": {
+    "vue": "^3.2.21"
+  }
 }
